@@ -1,0 +1,30 @@
+{
+  "name": "movies-assets",
+  "version": "0.1.0",
+  "description": "Assets for Gobb movies frontends",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.5.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-connect": "~0.5.0",
+    "assemble": "~0.4.27",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gang-of-bb/movies-assets.git"
+  },
+  "author": "gobb",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/gang-of-bb/movies-assets/issues"
+  }
+}

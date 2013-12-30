@@ -1,0 +1,59 @@
+@import "variables";
+/* Flexible image */
+img {
+  height: auto;
+  max-width: 100%;
+}
+ 
+.container {
+  padding: 0 15px;
+  position: relative;
+
+}
+ 
+.row {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+ 
+  // If you need different container width, you can easily
+  // change $containerWidth variable;
+  max-width: $containerWidth;
+ 
+  @include pie-clearfix;
+}
+
+// Select all element that contains class 'colmun'
+[class*="colmun"] {
+  float: left;
+  display: inline;
+  min-height: 1px;
+  position: relative;
+  margin-left: 1% * $columnGutter;
+ 
+  // Get rid of margin from first column
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+/* --- Column Width --- */
+/* We can do iteration in sass just like we do in javascript or php */
+@for $i from 1 through $column {
+  .colmun#{$i} {
+    $colWidth: 1% * ($columnWidth * $i) + ($columnGutter *($i - 1));
+    width: $colWidth;
+  }
+}
+
+/* #Mobile Phone
+================================================== */
+@media only screen and (max-width: 767px) {
+  .row {
+    max-width: 767px;
+    [class*="colmun"] {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

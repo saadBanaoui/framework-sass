@@ -1,0 +1,88 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+@mixin form-layout{
+  label {
+    font-weight: bold;
+    display: block;
+
+  }
+  fieldset {
+    padding: 1.4em;
+    margin: 0 0 1.5em 0;
+  }
+  legend {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  input {
+    &.text,
+    &.title,
+    &[type=email],
+    &[type=text],
+    &[type=password] {
+      margin: 0.5em 0;
+      background-color: white;
+      padding: 5px;
+      border:1px solid #ccc;
+      @include border-radius(5px)
+    }
+    &.title {
+      font-size: 1.5em;
+    }
+  }
+  textarea {
+  	border:1px solid #ccc;
+    margin: 0.5em 0;
+    padding: 5px;
+    @include border-radius(5px)
+  }
+  select {
+    margin: 0.5em 0;
+  }
+}
+@mixin form-sizes($input-width: 300px, $textarea-width: 390px, $textarea-height: 250px) {
+  input {
+    &.text,
+    &.title,
+    &[type=email],
+    &[type=text],
+    &[type=password] {
+      width: $input-width;
+    }
+  }
+  textarea {
+    width: $textarea-width;
+    height: $textarea-height;
+  }
+}
+
+@mixin form-borders($unfocused-border-color: #bbbbbb, $focus-border-color: $bg-color-blue, $fieldset-border-color: #cccccc) {
+  fieldset {
+    border: 1px solid $fieldset-border-color;
+  }
+  input.text, input.title, input[type=email], input[type=text], input[type=password],
+  textarea {
+    background-color: #fff;
+    border: 1px solid $unfocused-border-color;
+    &:focus {
+      border-color: $focus-border-color;
+    }
+  }
+  select {
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+  }
+}

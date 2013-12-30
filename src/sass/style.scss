@@ -1,0 +1,36 @@
+/* Import compass reset module */
+@import "compass";
+ 
+/* Import reset module */
+@import "compass/reset";
+/*import grid */
+@import "partials/grid";
+@import "partials/variables";
+
+
+
+//exemple
+.example [class*="col"] {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 4px;
+    color: #333333;
+    padding: 5px 0;
+    text-align: center;
+
+}
+.example {
+
+	.row {
+    margin-bottom: 18px;
+    h1{
+    	padding-top:18px;
+    }
+	}
+}
+
+.page-heading {
+    border-bottom: 1px solid #EEEEEE;
+    font: 27px/21px sans-serif;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+}

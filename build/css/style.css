@@ -1,0 +1,209 @@
+/* Import compass reset module */
+/* Import reset module */
+/* line 17, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*import grid */
+/* Flexible image */
+/* line 3, ../../src/sass/partials/_grid.scss */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 8, ../../src/sass/partials/_grid.scss */
+.container {
+  padding: 0 15px;
+  position: relative;
+}
+
+/* line 14, ../../src/sass/partials/_grid.scss */
+.row {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 978px;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 27, ../../src/sass/partials/_grid.scss */
+[class*="colmun"] {
+  float: left;
+  display: inline;
+  min-height: 1px;
+  position: relative;
+  margin-left: 3.09091%;
+}
+/* line 35, ../../src/sass/partials/_grid.scss */
+[class*="colmun"]:first-child {
+  margin-left: 0;
+}
+
+/* --- Column Width --- */
+/* We can do iteration in sass just like we do in javascript or php */
+/* line 43, ../../src/sass/partials/_grid.scss */
+.colmun1 {
+  width: 5.5%;
+}
+
+/* line 43, ../../src/sass/partials/_grid.scss */
+.colmun2 {
+  width: 14.09091%;
+}
+
+/* line 43, ../../src/sass/partials/_grid.scss */
+.colmun3 {
+  width: 22.68182%;
+}
+
+/* line 43, ../../src/sass/partials/_grid.scss */
+.colmun4 {
+  width: 31.27273%;
+}
+
+/* line 43, ../../src/sass/partials/_grid.scss */
+.colmun5 {
+  width: 39.86364%;
+}
+
+/* line 43, ../../src/sass/partials/_grid.scss */
+.colmun6 {
+  width: 48.45455%;
+}
+
+/* line 43, ../../src/sass/partials/_grid.scss */
+.colmun7 {
+  width: 57.04545%;
+}
+
+/* line 43, ../../src/sass/partials/_grid.scss */
+.colmun8 {
+  width: 65.63636%;
+}
+
+/* line 43, ../../src/sass/partials/_grid.scss */
+.colmun9 {
+  width: 74.22727%;
+}
+
+/* line 43, ../../src/sass/partials/_grid.scss */
+.colmun10 {
+  width: 82.81818%;
+}
+
+/* line 43, ../../src/sass/partials/_grid.scss */
+.colmun11 {
+  width: 91.40909%;
+}
+
+/* line 43, ../../src/sass/partials/_grid.scss */
+.colmun12 {
+  width: 100%;
+}
+
+/* #Mobile Phone
+================================================== */
+@media only screen and (max-width: 767px) {
+  /* line 52, ../../src/sass/partials/_grid.scss */
+  .row {
+    max-width: 767px;
+  }
+  /* line 54, ../../src/sass/partials/_grid.scss */
+  .row [class*="colmun"] {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* line 13, ../../src/sass/style.scss */
+.example [class*="col"] {
+  background: none repeat scroll 0 0 #EEEEEE;
+  border-radius: 4px;
+  color: #333333;
+  padding: 5px 0;
+  text-align: center;
+}
+
+/* line 23, ../../src/sass/style.scss */
+.example .row {
+  margin-bottom: 18px;
+}
+/* line 25, ../../src/sass/style.scss */
+.example .row h1 {
+  padding-top: 18px;
+}
+
+/* line 31, ../../src/sass/style.scss */
+.page-heading {
+  border-bottom: 1px solid #EEEEEE;
+  font: 27px/21px sans-serif;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+}
