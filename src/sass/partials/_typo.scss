@@ -23,25 +23,25 @@ h2,
 h3,
 .h3 {
   display: block;
-  @include flow_hr(22); // equiv 22px
+  @include flow_hr(20); // equiv 20px
   font-weight: normal;
 }
 h4,
 .h4 {
   display: block;
-  @include flow_hr(20); // equiv 20px
+  @include flow_hr(18); // equiv 18px
   font-weight: normal;
 }
 h5,
 .h5 {
   display: block;
-  @include flow_hr(18); // equiv 18px
+  @include flow_hr(16); // equiv 16px
   font-weight: normal;
 }
 h6,
 .h6 {
   display: block;
-  @include flow_hr(16); // equiv 16px
+  @include flow_hr(15); // equiv 15px
   font-weight: normal;
 }
 p {

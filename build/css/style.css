@@ -209,9 +209,9 @@ h2,
 h3,
 .h3 {
   display: block;
-  font-size: 1.57143em;
-  line-height: 1.01818;
-  margin: 1.01818em 0 0.50909em 0;
+  font-size: 1.42857em;
+  line-height: 1.12;
+  margin: 1.12em 0 0.56em 0;
   font-weight: normal;
 }
 
@@ -219,9 +219,9 @@ h3,
 h4,
 .h4 {
   display: block;
-  font-size: 1.42857em;
-  line-height: 1.12;
-  margin: 1.12em 0 0.56em 0;
+  font-size: 1.28571em;
+  line-height: 1.08889;
+  margin: 1.08889em 0 0.54444em 0;
   font-weight: normal;
 }
 
@@ -229,9 +229,9 @@ h4,
 h5,
 .h5 {
   display: block;
-  font-size: 1.28571em;
-  line-height: 1.08889;
-  margin: 1.08889em 0 0.54444em 0;
+  font-size: 1.14286em;
+  line-height: 1.05;
+  margin: 1.05em 0 0.525em 0;
   font-weight: normal;
 }
 
@@ -239,9 +239,9 @@ h5,
 h6,
 .h6 {
   display: block;
-  font-size: 1.14286em;
-  line-height: 1.05;
-  margin: 1.05em 0 0.525em 0;
+  font-size: 1.07143em;
+  line-height: 1.12;
+  margin: 1.12em 0 0.56em 0;
   font-weight: normal;
 }
 
@@ -307,12 +307,19 @@ h6:first-child, .h6:first-child {
   margin-top: 0;
 }
 
-/* line 14, ../../src/sass/style.scss */
-body {
-  font-size: 0.8em;
+@font-face {
+  font-family: "Blooming Grove";
+  src: url('/build/css/fonts/examples/bgrove.ttf') format('truetype'), url('/build/css/fonts/examples/bgrove.otf') format('opentype');
 }
 
-/* line 18, ../../src/sass/style.scss */
+/* line 16, ../../src/sass/style.scss */
+body {
+  font-size: 1em;
+  font-family: 'Balthazar', calibri;
+  color: #1c1c1c;
+}
+
+/* line 22, ../../src/sass/style.scss */
 .example [class*="col"] {
   background: none repeat scroll 0 0 #A52A2A;
   border-radius: 4px;
@@ -321,11 +328,31 @@ body {
   text-align: center;
 }
 
-/* line 28, ../../src/sass/style.scss */
+/* line 32, ../../src/sass/style.scss */
 .example .row {
   margin-bottom: 18px;
 }
-/* line 30, ../../src/sass/style.scss */
+/* line 34, ../../src/sass/style.scss */
 .example .row h1 {
   padding-top: 18px;
+}
+
+/* line 41, ../../src/sass/style.scss */
+header {
+  height: 5em;
+  background-color: #2d2d2d;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 48, ../../src/sass/style.scss */
+canvas {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
