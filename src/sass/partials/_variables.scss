@@ -22,3 +22,21 @@ $column :           12; //Twelve columns
 //
 // That is our gutter width. And here is our final gutter's formula
 $columnGutter : (100 - ($columnWidth * $column)) / ($column - 1);
+
+
+
+
+// Sass variables : adaptez-les à vos designs
+$basefont : 14; // si "14" alors 1em = 14px
+$l-h : 0.2;
+
+// couleurs
+$color-links : #2573be;
+$color-hover : #000;
+$hr : #000;
+$hr-height : 1px;
+$color-alert : #bf0000;
+
+// inputs
+$input-defaut-size : 250px;
+$input-defaut-border : 1px solid #000;

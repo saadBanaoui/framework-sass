@@ -1,0 +1,16 @@
+{
+  "name": "framework-sass",
+  "version": "0.0.0",
+  "homepage": "https://github.com/saadBanaoui/framework-sass",
+  "authors": [
+    "saadBanaoui <saad.banaoui@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -86,3 +86,34 @@
     border-style: solid;
   }
 }
+
+
+
+
+
+
+@mixin flow_hr( $value ){
+
+  font-size: em($value);
+  line-height: lineheight($value, $l-h, $basefont);
+  margin: margin_em($value, $l-h, $basefont) ;   
+
+}
+
+@mixin flow_other( $value ){
+
+  font-size: em($value);
+  line-height: lineheight($value, $l-h, $basefont);
+  margin: margin_em_other($value, $l-h, $basefont) ;   
+
+}
+
+@mixin vendor-prefix($name, $argument) {
+
+  -webkit-#{$name}: $argument;
+  -moz-#{$name}: $argument;
+  -ms-#{$name}: $argument;
+  -o-#{$name}: $argument;
+  #{$name}: $argument;
+
+}

@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /* Import compass reset module */
 /* Import reset module */
-/* line 17, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,45 +23,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -87,7 +88,7 @@ img {
   max-width: 978px;
   *zoom: 1;
 }
-/* line 38, ../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .row:after {
   content: "";
   display: table;
@@ -182,28 +183,149 @@ img {
     margin-left: 0;
   }
 }
-/* line 13, ../../src/sass/style.scss */
+/* ici les webfonts */
+@font-face {}
+/* line 12, ../../src/sass/partials/_typo.scss */
+h1,
+.h1 {
+  display: block;
+  font-size: 1.85714em;
+  line-height: 1.07692;
+  margin: 1.07692em 0 0.53846em 0;
+  font-weight: normal;
+}
+
+/* line 18, ../../src/sass/partials/_typo.scss */
+h2,
+.h2 {
+  display: block;
+  font-size: 1.71429em;
+  line-height: 1.05;
+  margin: 1.05em 0 0.525em 0;
+  font-weight: normal;
+}
+
+/* line 24, ../../src/sass/partials/_typo.scss */
+h3,
+.h3 {
+  display: block;
+  font-size: 1.57143em;
+  line-height: 1.01818;
+  margin: 1.01818em 0 0.50909em 0;
+  font-weight: normal;
+}
+
+/* line 30, ../../src/sass/partials/_typo.scss */
+h4,
+.h4 {
+  display: block;
+  font-size: 1.42857em;
+  line-height: 1.12;
+  margin: 1.12em 0 0.56em 0;
+  font-weight: normal;
+}
+
+/* line 36, ../../src/sass/partials/_typo.scss */
+h5,
+.h5 {
+  display: block;
+  font-size: 1.28571em;
+  line-height: 1.08889;
+  margin: 1.08889em 0 0.54444em 0;
+  font-weight: normal;
+}
+
+/* line 42, ../../src/sass/partials/_typo.scss */
+h6,
+.h6 {
+  display: block;
+  font-size: 1.14286em;
+  line-height: 1.05;
+  margin: 1.05em 0 0.525em 0;
+  font-weight: normal;
+}
+
+/* line 47, ../../src/sass/partials/_typo.scss */
+p {
+  margin: 0 0 10px;
+}
+
+/* line 50, ../../src/sass/partials/_typo.scss */
+.p-small {
+  font-size: 12.6;
+}
+
+/* line 56, ../../src/sass/partials/_typo.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* autres classes utiles */
+/* line 61, ../../src/sass/partials/_typo.scss */
+.smaller {
+  font-size: 0.71429em;
+  line-height: 1.12;
+  margin: 1.12em 0;
+}
+
+/* line 64, ../../src/sass/partials/_typo.scss */
+.small {
+  font-size: 0.85714em;
+  line-height: 1.16667;
+  margin: 1.16667em 0;
+}
+
+/* line 67, ../../src/sass/partials/_typo.scss */
+.big {
+  font-size: 1.14286em;
+  line-height: 1.05;
+  margin: 1.05em 0;
+}
+
+/* line 70, ../../src/sass/partials/_typo.scss */
+.bigger {
+  font-size: 1.28571em;
+  line-height: 1.08889;
+  margin: 1.08889em 0;
+}
+
+/* line 73, ../../src/sass/partials/_typo.scss */
+.biggest {
+  font-size: 1.42857em;
+  line-height: 1.12;
+  margin: 1.12em 0;
+}
+
+/* éviter problèmes de margin */
+/* line 83, ../../src/sass/partials/_typo.scss */
+h1:first-child, .h1:first-child,
+h2:first-child, .h2:first-child,
+h3:first-child, .h3:first-child,
+h4:first-child, .h4:first-child,
+h5:first-child, .h5:first-child,
+h6:first-child, .h6:first-child {
+  margin-top: 0;
+}
+
+/* line 14, ../../src/sass/style.scss */
+body {
+  font-size: 0.8em;
+}
+
+/* line 18, ../../src/sass/style.scss */
 .example [class*="col"] {
-  background: none repeat scroll 0 0 #EEEEEE;
+  background: none repeat scroll 0 0 #A52A2A;
   border-radius: 4px;
-  color: #333333;
+  color: #fff;
   padding: 5px 0;
   text-align: center;
 }
 
-/* line 23, ../../src/sass/style.scss */
+/* line 28, ../../src/sass/style.scss */
 .example .row {
   margin-bottom: 18px;
 }
-/* line 25, ../../src/sass/style.scss */
+/* line 30, ../../src/sass/style.scss */
 .example .row h1 {
   padding-top: 18px;
-}
-
-/* line 31, ../../src/sass/style.scss */
-.page-heading {
-  border-bottom: 1px solid #EEEEEE;
-  font: 27px/21px sans-serif;
-  margin-bottom: 18px;
-  padding-bottom: 18px;
 }

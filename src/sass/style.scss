@@ -1,19 +1,24 @@
+
+@charset "UTF-8";
 /* Import compass reset module */
 @import "compass";
- 
+ // Compass import 
+@import "compass/css3";
 /* Import reset module */
 @import "compass/reset";
 /*import grid */
 @import "partials/grid";
 @import "partials/variables";
 
-
-
+@import "partials/typo";
+body{
+    font-size: 0.8em;
+}
 //exemple
 .example [class*="col"] {
-    background: none repeat scroll 0 0 #EEEEEE;
+    background: none repeat scroll 0 0 #A52A2A;
     border-radius: 4px;
-    color: #333333;
+    color: #fff;
     padding: 5px 0;
     text-align: center;
 
@@ -28,9 +33,10 @@
 	}
 }
 
-.page-heading {
-    border-bottom: 1px solid #EEEEEE;
-    font: 27px/21px sans-serif;
-    margin-bottom: 18px;
-    padding-bottom: 18px;
-}
+
+
+ 
+
+
+
+
