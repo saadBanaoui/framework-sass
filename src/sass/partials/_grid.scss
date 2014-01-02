@@ -8,6 +8,9 @@ img {
 .container {
   padding: 0 15px;
   position: relative;
+  .row{
+    margin-top:10px;
+  }
 
 }
  
@@ -23,8 +26,8 @@ img {
   @include pie-clearfix;
 }
 
-// Select all element that contains class 'colmun'
-[class*="colmun"] {
+// Select all element that contains class 'col'
+[class*="col"] {
   float: left;
   display: inline;
   min-height: 1px;
@@ -40,7 +43,7 @@ img {
 /* --- Column Width --- */
 /* We can do iteration in sass just like we do in javascript or php */
 @for $i from 1 through $column {
-  .colmun#{$i} {
+  .col#{$i} {
     $colWidth: 1% * ($columnWidth * $i) + ($columnGutter *($i - 1));
     width: $colWidth;
   }
@@ -51,7 +54,7 @@ img {
 @media only screen and (max-width: 767px) {
   .row {
     max-width: 767px;
-    [class*="colmun"] {
+    [class*="col"] {
       width: 100%;
       margin-left: 0;
     }

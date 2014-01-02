@@ -83,3 +83,33 @@ h5:first-child,.h5:first-child,
 h6:first-child,.h6:first-child {
   margin-top: 0;
 }
+
+
+a{
+  color:$color-links;
+  text-decoration: none;
+  &:hover{
+    color:$color-hover;
+    text-decoration: underline;
+  }
+}
+
+.alert{
+  padding: 1em;
+  border:1px solid #ccc;
+ &.info{
+  border:1px solid darken($bg-color-blue,5%);
+  background-color: lighten($bg-color-blue,35%);
+  color:darken($bg-color-blue,25%);
+ }
+  &.error{
+    border:1px solid darken(red,5%);
+    background-color: lighten(red,35%);
+    color:darken(red,25%);
+   }
+     &.succes{
+    border:1px solid darken(green,5%);
+    background-color: lighten(green,65%);
+    color:darken(green,10%);
+   }
+}

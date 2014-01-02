@@ -1,34 +1,35 @@
 .btn{
   padding: 8px;
-  background-color: #fff;
+  background-color: $color-white;
   border:1px solid #ddd;
-  color:$font-color-grey;
+  color:$bg-color;
   @include border-radius(5px);
   min-width: 10em;
   &:hover{
     background-color: #ccc;
      @include transition(all, 0.6s, ease-in-out);
-     border:1px solid lighten($font-color-grey, 50%);
+     border:1px solid lighten($bg-color, 50%);
   }
 }
 
 .btn-blue{
   background-color: $bg-color-blue;
   border:1px solid darken($bg-color-blue, 10%);
-  color:$font-color-white;
+  color:$color-white;
   &:hover{
-    background-color:lighten($bg-color-blue, 15%);
-    color:$font-color-grey;
+    background-color:darken($bg-color-blue, 15%);
+    color:$bg-color;
+     border:1px solid darken($bg-color-blue, 10%);
   }
 }
 
 .btn-grey{
-  background-color: $bg-color-grey;
-  border:1px solid darken($bg-color-grey, 10%);
-  color:$font-color-white;
+  background-color:darken($bg-color, 50%);
+  border:1px solid darken($bg-color, 10%);
+  color:$color-white;
   &:hover{
-    background-color:lighten($bg-color-grey, 15%);
-     border:1px solid lighten($bg-color-grey, 10%);
+    background-color:lighten($bg-color, 15%);
+     border:1px solid lighten($bg-color, 10%);
 
   }
 }

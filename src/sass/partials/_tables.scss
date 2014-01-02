@@ -1,0 +1,23 @@
+@import "_variables";
+
+table{
+	
+	padding:1em;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	thead { background: $bg-color-blue;	color:$color-white; } 
+	tbody, tfoot{
+		tr:hover{
+		background-color:lighten($bg-color-blue,50%);
+		 @include transition(background-color, 0.7s, ease-in-out);
+		 color:$color;
+	}
+
+	}
+	td,th{
+		padding: 0.95em;
+		border: 1px #ccc solid;
+	}
+	
+
+}

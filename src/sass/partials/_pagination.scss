@@ -1,0 +1,27 @@
+@import "mixins";
+.pagination{
+	span{
+		padding:0.2em 0.5em;
+		display: block;
+		float:left;
+		margin-right:0.2em;
+		background-color:#ccc;
+		@include border-radius(5px);
+
+		a{
+			color:#888;
+		}
+	}
+	span.disabled{
+		color:#999;
+		border:1px solid #ccc;
+	}
+	span.current{
+		font-weight: bold;
+		background-color: $bg-color-blue;
+		
+		a{
+			color:#fff;
+		}
+	}
+}

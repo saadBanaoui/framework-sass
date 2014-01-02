@@ -11,39 +11,391 @@
 </head>
 <body>
 <header>
-	<div class="row"><img src="images/logo.png" alt="logo"></div>
+	<div class="row"><img src="images/logo.png" alt="logo" class="logo"></div>
 </header>
+	<div class="container">
 	<div class="row">
-	<div class="colmun12">
-		<img src="images/imgslide.png" alt="">
+		<h2 class="h2">Introduction</h2>
+		<h3>Un framework Css conçue pour almerys</h3>
+		<p>almerysCss est un mini framework CSS de base, il a pour but  l'harmonisation des projets d'intégration web au sein d'almerys, conçue par Saad EL BANAOUI et l'équipe Webdesign. 
+		Le framework regroupe un ensemble de bonnes pratiques, de conventions de nommage, d'astuces et de bouts de code "CSS" réutilisables.</p>
+		<p>Voici une liste des fonctionnalités que l'on trouvera dans almerysCss :</p>
+		<div class="example">
+			<ul>
+				<li>Reset</li>
+				<li>des classes réutilisables </li>
+				<li>des grilles simples et des gouttières</li>
+				<li>des aides au positionnement</li>
+				<li>du Responsive webdesign</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<h3>Installation</h3>
+		<p>Il suffit d'appeler la feuille de style "style.css" dans la section <code> "head" </code>.</p>
+		<pre class="cde">&lt;link rel="stylesheet" href="style.css" media="all"&gt;</pre>
+		<h3>Structure de base</h3>
+		<pre class="cde">
+			
+			<code>
+				&lt;div class="container"&gt;
+    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="row"&gt;
+    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col12"&gt;
+       			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;…
+    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+    			
+			</code>
+			
+		</pre>
+	</div>
+	<div class="row">
+		<h2 class="h2">Prise en main</h2>
+		<h3>Reset</h3>
+		<p>Le Reset utilisé dans almerysCss est celui de <a href="">Eric Meyer's</a></p>
+		<h3>Grille</h3>
+		<div class="container example">
+		
+		<div class="row">
+		<div class="col12">12</div>
+		</div>
+
+		<div class="row">
+		<div class="col1">1</div>
+		<div class="col10">10</div>
+		<div class="col1">1</div>
+		</div>
+
+		<div class="row">
+		<div class="col2">2</div>
+		<div class="col8">8</div>
+		<div class="col2">2</div>
+		</div>
+
+		<div class="row">
+		<div class="col3">3</div>
+		<div class="col6">6</div>
+		<div class="col3">3</div>
+		</div>
+
+		<div class="row">
+		<div class="col6">6</div>
+		<div class="col6">6</div>
+		</div>
+
+	</div>
+		<h3>Typographie</h3>
+		<h4>Titre</h4>
+		<div class="cde">
+			<h1>Je suis un titre de niveau 1</h1>
+			<h2>Je suis un titre de niveau 2</h2>
+			<h3>Je suis un titre de niveau 3</h3>
+			<h4>Je suis un titre de niveau 4</h4>
+			<h5>Je suis un titre de niveau 5</h5>
+		</div>
+		<h4>Paragraphe</h4>
+		<div class="cde">
+			<h5>Normal text</h5>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, exercitationem, quasi, quis laboriosam ea ut deleniti obcaecati id totam odio natus necessitatibus cum quia aspernatur harum quas veniam officia laudantium.</p>
+			<h5>Small text</h5>
+			<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, exercitationem, quasi, quis laboriosam ea ut deleniti obcaecati id totam odio natus necessitatibus cum quia aspernatur harum quas veniam officia laudantium.</p>
+			<h5>Big text</h5>
+			<p class="big">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, exercitationem, quasi, quis laboriosam ea ut deleniti obcaecati id totam odio natus necessitatibus cum quia aspernatur harum quas veniam officia laudantium.</p>
+		</div>
+		<h4>Alert</h4>
+		<p class="alert succes">
+			Succès Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+		</p>
+		<p class="alert error">
+			Succès Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+		</p>
+		<p class="alert info">
+			Succès Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+		</p>
+		<h3>Tables</h3>
+		<div class="cde">
+			<table cellspacing='0'>
+		    <thead>
+		      <tr class=''>
+		        <th>Title</th>
+		        <th>One</th>
+		        <th>Two</th>
+		        <th>Three</th>
+		        <th>Four</th>
+		        <th>Row Total</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr class=''>
+		        <th>Single</th>
+		        <td class='numeric'>1.0</td>
+		        <td class='numeric'>2.0</td>
+		        <td class='numeric'>3.0</td>
+		        <td class='numeric'>4.0</td>
+		        <td class='numeric'>10.0</td>
+		      </tr>
+		      <tr class=''>
+		        <th>Tens</th>
+		        <td class='numeric'>10.0</td>
+		        <td class='numeric'>20.0</td>
+		        <td class='numeric'>30.0</td>
+		        <td class='numeric'>40.0</td>
+		        <td class='numeric'>100.0</td>
+		      </tr>
+		    </tbody>
+		    <tfoot>
+		      <tr class=''>
+		        <th>Total</th>
+		        <td class='numeric'>11.0</td>
+		        <td class='numeric'>22.0</td>
+		        <td class='numeric'>33.0</td>
+		        <td class='numeric'>44.0</td>
+		        <td class='numeric'>110.0</td>
+		      </tr>
+		    </tfoot>
+	    </table>
+		</div>
+		<h3>Pagination</h3>
+		<div class="">
+			<ul>
+				<li class="pagination "><span class="current"><a href="">1</a></span></li>
+				<li class="pagination"><span><a href="">2</a></span></li>
+				<li class="pagination"><span><a href="">3</a></span></li>
+				<li class="pagination"><span><a href="">4</a></span></li>
+				<li class="pagination"><span><a href="">5</a></span></li>
+				<li class="pagination"><span><a href="">...</a></span></li>
+				<li class="pagination"><span><a href="">10</a></span></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<h3>Bouttons</h3>
+		<div class="cde">
+		<button class="btn btn-default" type="button">Default</button>
+		<button class="btn btn-blue" type="button">Blue</button>
+		<button class="btn btn-grey" type="button">Grey</button>
+		</div>
+		<h3>Iconographie</h3>
+		<div class="cde">
+		
+
+		<ul class="icon-gael">
+			<li><span class="disp-block icon32-airplane"></span><span>icon-airplane</span></li>
+			<li><span class="disp-block icon32-alarm"></span><span>icon-alarm</span></li>
+			<li><span class="disp-block icon32-align_center"></span><span>icon-align_center</span></li>
+			<li><span class="disp-block icon32-align_left"></span><span>icon-align_left</span></li>
+			<li><span class="disp-block icon32-align_right"></span><span>icon-align_right</span></li>
+			<li><span class="disp-block icon32-arrow_down"></span><span>icon-arrow_down</span></li>
+			<li><span class="disp-block icon32-arrow_right"></span ><span>icon-arrow_right</span></li>
+			<li><span class="disp-block icon32-arrow_small_down"></span><span>icon-arrow_small_down</span></li>
+			<li><span class="disp-block icon32-arrow_small_left"></span><span>icon-arrow_small_left</span></li>
+			<li><span class="disp-block icon32-arrow_small_right"></span><span>icon-arrow_small_right</span></li>
+			<li><span class="disp-block icon32-arrow_small_up"></span><span>icon-arrow_small_up</span></li>
+			<li><span class="disp-block icon32-attachment"></span><span>icon-attachment</span></li>
+			<li><span class="disp-block icon32-attachment_add"></span><span>icon-attachment_add</span></li>
+			<li><span class="disp-block icon32-backward"></span><span>icon-backward</span></li>
+			<li><span class="disp-block icon32-bank"></span><span>icon-bank</span></li>
+			<li><span class="disp-block icon32-basket"></span><span>icon-basket</span></li>
+			<li><span class="disp-block icon32-battery_charging"></span><span>icon-battery_charging</span></li>
+			<li><span class="disp-block icon32-battery_empty"></span><span>icon-battery_empty</span></li>
+			<li><span class="disp-block icon32-battery_full"></span><span>icon-battery_full</span></li>
+			<li><span class="disp-block icon32-battery_half"></span><span>icon-battery_half</span></li>
+			<li><span class="disp-block icon32-beverage"></span><span>icon-beverage</span></li>
+			<li><span class="disp-block icon32-bookmark"></span><span>icon-bookmark</span></li>
+			<li><span class="disp-block icon32-briefcase"></span><span>icon-briefcase</span></li>
+			<li><span class="disp-block icon32-brush_small"></span><span>icon-brush_small</span></li>
+			<li><span class="disp-block icon32-caddy"></span><span>icon-caddy</span></li>
+			<li><span class="disp-block icon32-calculator"></span><span>icon-calculator</span></li>
+			<li><span class="disp-block icon32-calendar"></span><span>icon-calendar</span></li>
+			<li><span class="disp-block icon32-camera"></span><span>icon-camera</span></li>
+			<li><span class="disp-block icon32-car"></span><span>icon-car</span></li>
+			<li><span class="disp-block icon32-cell_add"></span><span>icon-cell_add</span></li>
+			<li><span class="disp-block icon32-chat"></span><span>icon-chat</span></li>
+			<li><span class="disp-block icon32-checkbox_valid"></span><span>icon-checkbox_valid</span></li>
+			<li><span class="disp-block icon32-checkbox"></span><span>icon-checkbox</span></li>
+
+			<li><span class="disp-block icon32-clock"></span><span>icon-clock</span></li>
+			<li><span class="disp-block icon32-clock2"></span><span>icon-clock2</span></li>
+			<li><span class="disp-block icon32-cloud_upload"></span><span>icon-cloud_upload</span></li>
+			<li><span class="disp-block icon32-coffee"></span><span>icon-coffee</span></li>
+			<li><span class="disp-block icon32-coffee_bean"></span><span>icon-checkbox</span></li>
+			<li><span class="disp-block icon32-compass"></span><span>icon-coffee_bean</span></li>
+			<li><span class="disp-block icon32-computer"></span><span>icon-computer</span></li>
+
+			<li><span class="disp-block icon32-contact"></span><span>icon-contact</span></li>
+			<li><span class="disp-block icon32-contact_add"></span><span>icon-contact_add</span></li>
+			<li><span class="disp-block icon32-contact_lock"></span><span>icon-contact_lock</span></li>
+			<li><span class="disp-block icon32-contact_phone"></span><span>icon-contact_phone</span></li>
+			<li><span class="disp-block icon32-contact_search"></span><span>icon-contact_search</span></li>
+
+			<li><span class="disp-block icon32-contact_settings"></span><span>icon-contact_settings</span></li>
+			<li><span class="disp-block icon32-contact_suppress"></span><span>icon-contact_suppress</span></li>
+			<li><span class="disp-block icon32-contact_takeoff"></span><span>icon-contact_takeoff</span></li>
+			<li><span class="disp-block icon32-control"></span><span>icon-control</span></li>
+
+			<li><span class="disp-block icon32-control_add"></span><span>icon-control_add</span></li>
+			<li><span class="disp-block icon32-conversation"></span><span>icon-conversation</span></li>
+			<li><span class="disp-block icon32-credit_card"></span><span>icon-credit_card</span></li>
+			<li><span class="disp-block icon32-cross"></span><span>icon-icon32-cross</span></li>
+			<li><span class="disp-block icon32-cross_small"></span><span>icon-cross_small</span></li>
+
+			<li><span class="disp-block icon32-disc"></span><span>icon-disc</span></li>
+			<li><span class="disp-block icon32-division"></span><span>icon-division</span></li>
+			<li><span class="disp-block icon32-dollar"></span><span>icon-dollar</span></li>
+			<li><span class="disp-block icon32-dots"></span><span>icon-dots</span></li>
+
+			<li><span class="disp-block icon32-download"></span><span>icon-download</span></li>
+			<li><span class="disp-block icon32-equals"></span><span>icon-equals</span></li>
+			<li><span class="disp-block icon32-euro"></span><span>icon-euro</span></li>
+
+			<li><span class="disp-block icon32-exclamation_point"></span><span>exclamation_point</span></li>
+			<li><span class="disp-block icon32-exit"></span><span>icon-exit</span></li>
+			<li><span class="disp-block icon32-experiment"></span><span>icon-experiment</span></li>
+			<li><span class="disp-block icon32-eye"></span><span>icon-eye</span></li>
+			<li><span class="disp-block icon32-favorites"></span><span>icon-favorites</span></li>
+
+
+
+
+			<li><span class="disp-block icon32-favorites_suppress"></span><span>icon-favorites_suppress</span></li>
+			<li><span class="disp-block icon32-favorites_takeoff"></span><span>icon-favorites_takeoff</span></li>
+			<li><span class="disp-block icon32-field"></span><span>icon-field</span></li>
+			<li><span class="disp-block icon32-field_add"></span><span>icon-field_add</span></li>
+			<li><span class="disp-block icon32-file_list"></span><span>icon-file_list</span></li>
+			<li><span class="disp-block icon32-film"></span><span>icon-film</span></li>
+			<li><span class="disp-block icon32-filter"></span><span>icon-filter</span></li>
+			<li><span class="disp-block icon32-fire "></span><span>icon-fire </span></li>
+			
+			<li><span class="disp-block icon32-flag "></span><span>icon-flag </span></li>
+			<li><span class="disp-block icon32-folder "></span><span>icon-folder </span></li>
+			<li><span class="disp-block icon32-folder_add "></span><span>icon-folder_add </span></li>
+			<li><span class="disp-block icon32-food "></span><span>icon-food </span></li>
+			<li><span class="disp-block icon32-forbidden "></span><span>icon-forbidden </span></li>
+			<li><span class="disp-block icon32-fork "></span><span>icon-fork </span></li>
+
+			<li><span class="disp-block icon32-forward "></span><span>icon-forward </span></li>
+			<li><span class="disp-block icon32-france_search "></span><span>icon-france_search </span></li>
+			<li><span class="disp-block icon32-geolocation "></span><span>icon-geolocation </span></li>
+			<li><span class="disp-block icon32-glass_champagne "></span><span>icon-glass_champagne </span></li>
+			<li><span class="disp-block icon32-glass_cocktail"></span><span>icon-glass_cocktail</span></li>
+			<li><span class="disp-block icon32-glass_wine "></span><span>icon-glass_wine</span></li>
+
+			<li><span class="disp-block icon32-help "></span><span>icon-help</span></li>
+			<li><span class="disp-block icon32-home "></span><span>icon-home</span></li>
+			<li><span class="disp-block icon32-id_card "></span><span>icon-id_card</span></li>
+			<li><span class="disp-block icon32-informations "></span><span>icon-informations</span></li>
+			<li><span class="disp-block icon32-key"></span><span>icon-key</span></li>
+			<li><span class="disp-block icon32-keyboard_down"></span><span>icon-keyboard_down</span></li>
+
+
+			<li><span class="disp-block icon32-keyboard_up "></span><span>icon-keyboard_up</span></li>
+			<li><span class="disp-block icon32-knife "></span><span>icon-knife</span></li>
+			<li><span class="disp-block icon32-laptop "></span><span>icon-laptop</span></li>
+			<li><span class="disp-block icon32-layers"></span><span>icon-layers</span></li>
+			<li><span class="disp-block icon32-letter"></span><span>icon-letter</span></li>
+			<li><span class="disp-block icon32-letter_barred"></span><span>icon-letter_barred</span></li>
+			<li><span class="disp-block icon32-letter_italic"></span><span>icon-letter_italic</span></li>
+			<li><span class="disp-block icon32-letter_underline"></span><span>icon-letter_underline</span></li>
+
+
+			<li><span class="disp-block icon32-light_bulb"></span><span>icon-light_bulb</span></li>
+			<li><span class="disp-block icon32-lightning"></span><span>icon-lightning</span></li>
+			<li><span class="disp-block icon32-link"></span><span>icon-link</span></li>
+
+			<li><span class="disp-block icon32-list"></span><span>icon-liste</span></li>
+			<li><span class="disp-block icon32-list_nodes "></span><span>icon-list_nodes </span></li>
+			<li><span class="disp-block icon32-lock"></span><span>icon-lock</span></li>
+			<li><span class="disp-block icon32-lock_open "></span><span>icon-lock_open </span></li>
+			<li><span class="disp-block icon32-logout "></span><span>icon-logout </span></li>
+			<li><span class="disp-block icon32-map"></span><span>icon-map</span></li>
+			<li><span class="disp-block icon32-map_with_pin"></span><span>icon-map_with_pin</span></li>
+			<li><span class="disp-block icon32-maximize"></span><span>icon-maximize</span></li>
+
+			<li><span class="disp-block icon32-minimize"></span><span>icon-minimize</span></li>
+			<li><span class="disp-block icon32-minus"></span><span>icon-minus</span></li>
+			<li><span class="disp-block icon32-mobile_phone"></span><span>mobile_phone</span></li>
+			<li><span class="disp-block icon32-pack"></span><span>icon-pack</span></li>
+			<li><span class="disp-block icon32-pack_add"></span><span>icon-pack_add</span></li>
+			<li><span class="disp-block icon32-paperplane"></span><span>icon-paperplane</span></li>
+			<li><span class="disp-block icon32-path"></span><span>icon-path</span></li>
+			<li><span class="disp-block icon32-pause"></span><span>icon-pause</span></li>
+			<li><span class="disp-block icon32-pen"></span><span>icon-pen</span></li>
+			<li><span class="disp-block icon32-pen_small"></span><span>icon-pen_small</span></li>
+			<li><span class="disp-block icon32-pencil_small"></span><span>icon-pencil_small</span></li>
+			<li><span class="disp-block icon32-percentage"></span><span>icon-maximize</span></li>
+			<li><span class="disp-block icon32-phone"></span><span>icon-phone</span></li>
+			<li><span class="disp-block icon32-pill"></span><span>icon-pill</span></li>
+			<li><span class="disp-block icon32-play"></span><span>icon-play</span></li>
+			<li><span class="disp-block icon32-plus"></span><span>icon-plus</span></li>
+
+			<li><span class="disp-block icon32-plus_small"></span><span>icon-plus_small</span></li>
+			<li><span class="disp-block icon32-printer"></span><span>icon-printer</span></li>
+			<li><span class="disp-block icon32-radiator"></span><span>icon-radiator</span></li>
+			<li><span class="disp-block icon32-recorder"></span><span>icon-recorder</span></li>
+			<li><span class="disp-block icon32-recycle"></span><span>icon-recycle</span></li>
+			<li><span class="disp-block icon32-redo"></span><span>icon-redo</span></li>
+			<li><span class="disp-block icon32-refresh"></span><span>icon-refresh</span></li>
+			<li><span class="disp-block icon32-reset"></span><span>icon-reset</span></li>
+			<li><span class="disp-block icon32-safe"></span><span>icon-safe</span></li>
+
+			<li><span class="disp-block icon32-save"></span><span>icon-save</span></li>
+			<li><span class="disp-block icon32-screen"></span><span>icon-screen</span></li>
+			<li><span class="disp-block icon32-screwdriver"></span><span>icon-screwdriver</span></li>
+			<li><span class="disp-block icon32-sequence_add"></span><span>icon-sequence_add</span></li>
+			<li><span class="disp-block icon32-setting"></span><span>icon-setting</span></li>
+			<li><span class="disp-block icon32-settings"></span><span>icon-settings</span></li>
+			<li><span class="disp-block icon32-share"></span><span>icon-share</span></li>
+			<li><span class="disp-block icon32-smartphone"></span><span>icon-smartphone</span></li>
+
+			<li><span class="disp-block icon32-sms"></span><span>icon-sms</span></li>
+			<li><span class="disp-block icon32-sound_less"></span><span>icon-sound_less</span></li>
+			<li><span class="disp-block icon32-sound_more"></span><span>icon-sound_more</span></li>
+			<li><span class="disp-block icon32-sound_mute"></span><span>icon-sound_mute</span></li>
+			<li><span class="disp-block icon32-statement"></span><span>icon-statement</span></li>
+
+			<li><span class="disp-block icon32-stats"></span><span>icon-stats</span></li>
+			<li><span class="disp-block icon32-step_backward"></span><span>icon-step_backward</span></li>
+			<li><span class="disp-block icon32-step_forward"></span><span>icon-step_forward</span></li>
+			<li><span class="disp-block icon32-step_in"></span><span>icon-step_in</span></li>
+			<li><span class="disp-block icon32-tag"></span><span>icon-step_out</span></li>
+
+			<li><span class="disp-block icon32-stop"></span><span>icon-stop</span></li>
+			<li><span class="disp-block icon32-tag"></span><span>icon-tag</span></li>
+			<li><span class="disp-block icon32-target"></span><span>icon-target</span></li>
+			<li><span class="disp-block icon32-time_add"></span><span>icon-time_add</span></li>
+			<li><span class="disp-block icon32-time_edit"></span><span>icon-time_edit</span></li>
+			<li><span class="disp-block icon32-trash"></span><span>icon-trash</span></li>
+
+			<li><span class="disp-block icon32-trash_wide"></span><span>icon-trash_wide</span></li>
+			<li><span class="disp-block icon32-truck"></span><span>icon-truck</span></li>
+			<li><span class="disp-block icon32-undo"></span><span>icon-undo</span></li>
+			<li><span class="disp-block icon32-upload"></span><span>icon-upload</span></li>
+			<li><span class="disp-block icon32-valid"></span><span>icon-valid</span></li>
+
+
+			<li><span class="disp-block icon32-weather_cloud"></span><span>icon-weather_cloud</span></li>
+			<li><span class="disp-block icon32-weather_cloudy_sun"></span><span>icon-weather_cloudy_sun</span></li>
+			<li><span class="disp-block icon32-weather_snow"></span><span>icon-weather_snow</span></li>
+			<li><span class="disp-block icon32-weather_sun"></span><span>icon-weather_sun</span></li>
+			<li><span class="disp-block icon32-web_browser"></span><span>icon-web_browser</span></li>
+			<li><span class="disp-block icon32-wifi"></span><span>icon-wifi</span></li>
+			<li><span class="disp-block icon32-wrench"></span><span>icon-wrench</span></li>
+			
+
+
+
+
+
+
+		</ul>
+		
+
+	</div>
 	</div>
 </div>
-<div class="row">
-	<h2>Services</h2>
-</div>
-<div class="row">
-	<div class="colmun3">
-		<img src="images/1.png" alt="">
-		<h3>Website design & development</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, a magni quasi in dignissimos modi accusamus repellat ipsa? Blanditiis, non quae deleniti ipsa deserunt pariatur labore doloremque commodi harum quo!</p>
-	</div>
-	<div class="colmun3">
-		<img src="images/2.png" alt="">
-		<h3>Search Engine Optimization </h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, a magni quasi in dignissimos modi accusamus repellat ipsa? Blanditiis, non quae deleniti ipsa deserunt pariatur labore doloremque commodi harum quo!</p>
-	</div>
-	<div class="colmun3">
-		<img src="images/3.png" alt="">
-		<h3>MOBILE APPLICATIONS</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, a magni quasi in dignissimos modi accusamus repellat ipsa? Blanditiis, non quae deleniti ipsa deserunt pariatur labore doloremque commodi harum quo!</p>
-	</div>
-	<div class="colmun3">
-		<img src="images/4.png" alt="">
-		<h3>DIGITAL MARKETING</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, a magni quasi in dignissimos modi accusamus repellat ipsa? Blanditiis, non quae deleniti ipsa deserunt pariatur labore doloremque commodi harum quo!</p>
-	</div>
-</div>
-	<canvas id="canvas"></canvas>
-	<script src="js/snow.js"></script>
+	<!--<canvas id="canvas"></canvas>
+	<script src="js/snow.js"></script>-->
+	<footer>
+		<div class="row"><p>Copyright &copy; almerys 2014</p></div>
+	</footer>
 </body>
 </html>
